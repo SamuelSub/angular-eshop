@@ -1,0 +1,14 @@
+<div class="container-fluid">
+  <div class="card-group gap-3 justify-content-center my-5">
+    <app-product-item *ngFor="let product of singlePageOfProducts" [productItem]="product"></app-product-item>
+  </div>
+  <ul class="pagination justify-content-center">
+    <li class="page-item">
+      <a href="#" class="page-link" (click)="handlePageChange($event)">Previous Page</a>
+    </li>
+    <li class="page-item">
+      <a href="#" class="page-link" (click)="handlePageChange($event)">Next Page</a>
+    </li>
+  </ul>
+</div>
+

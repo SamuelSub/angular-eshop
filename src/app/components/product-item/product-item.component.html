@@ -1,0 +1,12 @@
+<div #productCard class="card" style="width: 18rem;">
+  <img src="https://source.unsplash.com/random" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h2>ID: {{productItem.id}}</h2>
+    <h5 class="card-title">{{productItem.title}}</h5>
+    <p class="card-text">{{productItem.body}}</p>
+    <a href="#" class="btn btn-primary" (click)="onClickAddToCart({
+      title: productItem.title,
+      body: productItem.body
+    })">Add To Cart</a>
+  </div>
+</div>
